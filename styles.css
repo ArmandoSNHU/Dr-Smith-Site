@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    background-color: #f4f4f4;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#services, #about, #contact {
+    padding: 40px 20px;
+}
+
+.service {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
