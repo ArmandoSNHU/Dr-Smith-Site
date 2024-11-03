@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4; /* Light background for better contrast */
 }
 
 header {
@@ -22,14 +23,38 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline; /* Add hover effect for navigation links */
+}
+
 #hero {
-    background-color: #f4f4f4;
+    background-color: #e7f3fe; /* Light blue background for hero section */
     padding: 100px 20px;
     text-align: center;
 }
 
-#services, #about, #contact {
+h1 {
+    font-size: 2.5em; /* Increase the size of the main header */
+}
+
+h2 {
+    font-size: 2em; /* Increase the size of secondary headers */
+}
+
+h3 {
+    font-size: 1.5em; /* Increase the size of tertiary headers */
+}
+
+p, textarea {
+    font-size: 1.2em; /* Increase the size of paragraph text */
+}
+
+#services, #about, #team, #testimonials, #contact {
     padding: 40px 20px;
+    background-color: #fff; /* White background for sections */
+    margin: 20px 0; /* Add spacing between sections */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
 }
 
 .service {
@@ -42,4 +67,24 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 1.2em; /* Make button text bigger */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+blockquote {
+    border-left: 4px solid #4CAF50;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-style: italic;
 }
