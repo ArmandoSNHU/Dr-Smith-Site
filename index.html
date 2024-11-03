@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Doctor's Office</title>
+    <title>Texas Doctors Associates</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
     <section id="hero">
         <h2>Your Health is Our Priority</h2>
         <p>Modern care, trusted expertise.</p>
-        <button>Make an Appointment</button>
+        <button onclick="makeAppointment()">Make an Appointment</button>
     </section>
 
     <!-- Services Section -->
@@ -35,7 +35,6 @@
             <h3>Diagnostics</h3>
             <p>Advanced diagnostics to ensure the best care.</p>
         </div>
-        <!-- Add more services as needed -->
     </section>
 
     <!-- About Us Section -->
@@ -47,7 +46,7 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form>
+        <form onsubmit="sendMessage(event)">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
@@ -59,5 +58,21 @@
     <footer>
         <p>&copy; 2024 Texas Doctors Associates. All rights reserved.</p>
     </footer>
+
+    <script>
+        function makeAppointment() {
+            alert("Appointment feature coming soon!");
+        }
+
+        function sendMessage(event) {
+            event.preventDefault();
+            const name = event.target.name.value;
+            const email = event.target.email.value;
+            const message = event.target.message.value;
+
+            alert(`Message Sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            event.target.reset();
+        }
+    </script>
 </body>
 </html>
