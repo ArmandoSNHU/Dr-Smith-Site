@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #007BFF; /* Blue header */
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -63,7 +63,7 @@ p, textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #007BFF; /* Blue button */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -72,19 +72,42 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #4CAF50;
+    background-color: #007BFF; /* Blue footer */
     color: white;
 }
 
 blockquote {
-    border-left: 4px solid #4CAF50;
+    border-left: 4px solid #007BFF; /* Blue border for blockquotes */
     margin: 20px 0;
     padding-left: 20px;
     font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+}
+
+input, textarea {
+    margin: 10px 0; /* Add spacing between input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%; /* Make inputs take full width */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 150px; /* Set a fixed height */
+}
+
+button {
+    align-self: flex-start; /* Align button to the left */
 }
